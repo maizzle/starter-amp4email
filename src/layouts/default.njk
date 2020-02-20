@@ -1,0 +1,31 @@
+<!doctype html>
+<html ⚡4email>
+<head>
+  <meta charset="{{ page.charset or 'utf8' }}">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <style amp4email-boilerplate>body{visibility:hidden;}</style>
+  {% if page.googleFonts %}<link href="https://fonts.googleapis.com/css?family={{ page.googleFonts }}" rel="stylesheet" media="screen">{%- endif %}
+
+  {% if css %}
+  <style amp-custom>
+    .amp-carousel-button {
+      background-color: rgba(76,81,191,0.75);
+      cursor: pointer;
+    }
+
+    .bg-image {
+      background-image:  url('{{ page.images.carousel }}');
+    }
+
+    {{ css }}
+  </style>
+  {% endif %}
+
+  {% block head %}{% endblock %}
+</head>
+<body {% if page.bodyClass %}class="{{ page.bodyClass }}"{% endif %}>
+
+  {% block template %}{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+---
+bodyClass: bg-gray-200
+images:
+  logo: https://res.cloudinary.com/maizzle/image/upload/v1552393888/misc/maizzle.png
+  carousel: https://images.unsplash.com/photo-1565932887479-b18108f07ffd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80
+---
+
+{% extends "src/layouts/default.njk" %}
+
+{% block head %}
+<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+{% endblock %}
+
+{% block template %}
+
+<div class="font-sans bg-gray-200">
+  <div class="max-w-600 mx-auto">
+    <header class="py-32 px-24 md:p-48 text-center">
+      <a href="https://maizzle.com">
+        <amp-img src="{{ page.images.logo }}" width="75" height="50" alt="Maizzle logo" />
+      </a>
+    </header>
+    <section class="max-w-600 mb-32">
+      <amp-carousel height="300" controls layout="flex-item" type="slides" class="py-16 bg-image bg-top bg-no-repeat bg-cover md:rounded">
+        <div class="flex items-center">
+          <div class="px-24 md:px-48 text-white">
+            <h1 class="m-0 mb-16 text-4xl sm:leading-40">First slide</h1>
+            <p class="mb-32 md:mb-48 text-lg leading-24">Consectetur esse cupidatat in aliqua pariatur anim pariatur dolor nisi. Adipisicing elit labore nisi ullamco qui sint cillum commodo nisi velit sunt dolore.</p>
+            <a href="https://maizzle.com" class="inline-block bg-indigo-800 hover:bg-indigo-700 rounded font-semibold text-white leading-full py-16 px-24 no-underline">Read more &rarr;</a>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="px-24 md:px-48 text-white">
+            <h1 class="m-0 mb-16 text-4xl sm:leading-40">Second slide</h1>
+            <p class="mb-32 md:mb-48 text-lg leading-24">Consectetur esse cupidatat in aliqua pariatur anim pariatur dolor nisi. Adipisicing elit labore nisi ullamco qui sint cillum commodo nisi velit sunt dolore.</p>
+            <a href="https://maizzle.com" class="inline-block bg-indigo-800 hover:bg-indigo-700 rounded font-semibold text-white leading-full py-16 px-24 no-underline">Read more &rarr;</a>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="px-24 md:px-48 text-white">
+            <h1 class="m-0 mb-16 text-4xl sm:leading-40">Third slide</h1>
+            <p class="mb-32 md:mb-48 text-lg leading-24">Consectetur esse cupidatat in aliqua pariatur anim pariatur dolor nisi. Adipisicing elit labore nisi ullamco qui sint cillum commodo nisi velit sunt dolore.</p>
+            <a href="https://maizzle.com" class="inline-block bg-indigo-800 hover:bg-indigo-700 rounded font-semibold text-white leading-full py-16 px-24 no-underline">Read more &rarr;</a>
+          </div>
+        </div>
+      </amp-carousel>
+    </section>
+    <section class="px-24 mb-32">
+      <article class="p-24 bg-white rounded">
+        <span class="mb-4 text-sm text-gray-500">2 Feb, 2020</span>
+        <h2 class="m-0 mb-24 text-2xl leading-24">Sit aliqua reprehenderit qui veniam culpa.</h2>
+        <p class="m-0 mb-24 text-base text-gray-800">Ex consequat deserunt id cupidatat exercitation irure commodo. Dolor et est irure elit cupidatat laborum veniam amet eiusmod Lorem ex ea do aliqua. Ipsum Lorem nulla sit aliqua quis veniam magna...</p>
+        <a href="https://maizzle.com" class="text-base text-blue-500 hover:text-blue-400 no-underline">Read more &rarr;</a>
+      </article>
+    </section>
+    <section class="flex flex-col md:flex-row px-24 mb-32 md:-mx-8">
+      <article class="w-full md:w-1/2 md:px-8 mb-32 md:mb-0">
+        <div class="p-24 bg-white rounded">
+          <span class="mb-4 text-sm text-gray-500">3 Feb, 2020</span>
+          <h2 class="m-0 mb-24 text-2xl leading-24">Do ullamco reprehenderit ut dolor.</h2>
+          <p class="m-0 mb-24 text-base text-gray-800">Consectetur veniam ipsum ea sit est do voluptate laboris...</p>
+          <a href="https://maizzle.com" class="text-base text-blue-500 hover:text-blue-400 no-underline">Read more &rarr;</a>
+        </div>
+      </article>
+      <article class="w-full md:w-1/2 md:px-8">
+        <div class="p-24 bg-white rounded">
+          <span class="mb-4 text-sm text-gray-500">4 Feb, 2020</span>
+          <h2 class="m-0 mb-24 text-2xl leading-24">Sunt in do sunt officia nisi enim qui eiusmod.</h2>
+          <p class="m-0 mb-24 text-base text-gray-800">Nulla officia mollit ipsum eiusmod excepteur ea...</p>
+          <a href="https://maizzle.com" class="text-base text-blue-500 hover:text-blue-400 no-underline">Read more &rarr;</a>
+        </div>
+      </article>
+    </section>
+    <section class="px-48 mb-64">
+      <h3 class="m-0 mb-24 text-base font-semibold text-gray-500 uppercase">From the archives</h3>
+      <ul class="list-none p-0">
+        <li>
+          <h4 class="m-0 mb-4 text-xl font-semibold">
+            <a href="https://maizzle.com" class="text-blue-500 hover:text-blue-400 no-underline">Lorem velit tempor qui</a>
+          </h4>
+          <p class="m-0 text-gray-500">Aliquip excepteur sint voluptate Lorem nisi deserunt consequat...</p>
+        </li>
+        <li class="h-px bg-gray-300 my-24"></li>
+        <li>
+          <h4 class="m-0 mb-4 text-xl font-semibold">
+            <a href="https://maizzle.com" class="text-blue-500 hover:text-blue-400 no-underline">Lorem velit tempor qui</a>
+          </h4>
+          <p class="m-0 text-gray-500">Aliquip excepteur sint voluptate Lorem nisi deserunt consequat...</p>
+        </li>
+      </ul>
+    </section>
+    <footer class="px-24 md:px-48s mb-48">
+      <div class="px-24 py-16 bg-gray-300 rounded">
+        <p class="m-0 text-sm text-gray-600">
+          You are receiving this email because you signed up for Website Newsletter Weekly.
+          You can <a href="https://maizzle.com" class="text-blue-500 hover:text-blue-400 no-underline">unsubscribe</a> at any time.
+        </p>
+      </div>
+    </footer>
+  </div>
+</div>
+
+{% endblock %}
+

@@ -1,0 +1,83 @@
+---
+bodyClass: bg-gray-200
+images:
+  logo: https://res.cloudinary.com/maizzle/image/upload/v1552393888/misc/maizzle.png
+---
+
+{% extends "src/layouts/default.njk" %}
+
+{% block head %}
+<script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+{% endblock %}
+
+{% block template %}
+
+<div class="font-sans bg-gray-200">
+  <div class="max-w-600 mx-auto">
+    <div class="px-24">
+      <header class="py-32 md:p-48 text-center">
+        <a href="https://maizzle.com">
+          <amp-img src="{{ page.images.logo }}" width="75" height="50" alt="Maizzle logo" />
+        </a>
+      </header>
+      <section class="p-32 mb-48 text-base leading-24 rounded bg-white text-gray-800">
+        <h1 class="m-0 mb-16 text-3xl font-semibold text-black">Accordion</h1>
+        <p class="m-0 mb-24 text-gray-700">UI element made up of vertically stacked items. Each item can be expanded or collapsed to reveal or hide its content.</p>
+        <amp-accordion>
+          <section class="accordion-item">
+            <header class="accordion-toggle">
+              <h2>
+                <span class="icon expand">+</span>
+                <span class="icon collapse">&ndash;</span>
+                <span>When should you use an accordion?</span>
+              </h2>
+            </header>
+            <div class="accordion-content">
+              <p class="m-0">Anytime you want to toggle the display of some content.</p>
+            </div>
+          </section>
+          <section class="accordion-item">
+            <header class="accordion-toggle">
+              <h2>
+                <span class="icon expand">+</span>
+                <span class="icon collapse">&ndash;</span>
+                <span>Why should you use it?</span>
+              </h2>
+            </header>
+            <div class="accordion-content">It's great for saving (vertical) space in your emails.</div>
+          </section>
+          <section class="accordion-item">
+            <header class="accordion-toggle">
+              <h2>
+                <span class="icon expand">+</span>
+                <span class="icon collapse">&ndash;</span>
+                <span>Can I have just one item open at a time?</span>
+              </h2>
+            </header>
+            <div class="accordion-content">Sure, just use the <span class="inline-code">expand-single-section</span> attribute on the <span class="inline-code">&lt;amp-accordion&gt;</span> element.</div>
+          </section>
+          <section class="accordion-item">
+            <header class="accordion-toggle">
+              <h2>
+                <span class="icon expand">+</span>
+                <span class="icon collapse">&ndash;</span>
+                <span>What if I want one of the items already expanded?</span>
+              </h2>
+            </header>
+            <div class="accordion-content">Add the <span class="inline-code">expanded</span> attribute on the <span class="inline-code">&lt;section&gt;</span> element you want to show as expanded.</div>
+          </section>
+        </amp-accordion>
+      </section>
+      <footer class="px-24 text-xs text-center text-gray-600 leading-none">
+        <p class="m-0 mb-4 uppercase">Powered by Maizzle</p>
+        <p class="m-0 italic">The framework for rapid email prototyping</p>
+        <p class="cursor-default">
+          {% include "src/partials/footer-links.njk" %}
+        </p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
