@@ -1,6 +1,6 @@
 # Maizzle ⚡4email Starter
 
-AMP for Email templates, built with [Tailwind CSS](https://tailwindcss.com/) in [Maizzle](https://maizzle.com).
+Original AMP for Email templates, built with [Tailwind CSS](https://tailwindcss.com/) in [Maizzle](https://maizzle.com).
 
 ## Templates
 
