@@ -20,7 +20,7 @@ npm install -g @maizzle/cli
 Scaffold a new project with this starter:
 
 ```
-maizzle new https://github.com/maizzle/starter-amp4email.git && cd starter-amp4email
+maizzle new amp4email && cd starter-amp4email
 ```
 
 Develop locally:
@@ -38,4 +38,3 @@ maizzle build production
 ## Documentation
 
 Maizzle documentation is available at https://maizzle.com
-
