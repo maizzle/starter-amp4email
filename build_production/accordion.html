@@ -1,0 +1,313 @@
+<!doctype html>
+<html ⚡4email>
+
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <style amp4email-boilerplate>
+      body {
+        visibility: hidden;
+      }
+    </style>
+    <style amp-custom>
+      .amp-carousel-button {
+        background-color: rgba(76, 81, 191, 0.75);
+        cursor: pointer;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        word-break: break-word;
+      }
+
+      img {
+        border: 0;
+        max-width: 100%;
+        line-height: 100%;
+        vertical-align: middle;
+      }
+
+      .accordion-item {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin-bottom: 8px;
+        border: solid #edf2f7;
+        border-width: 0 0 1px;
+      }
+
+      .accordion-item:last-child {
+        border-style: none;
+      }
+
+      .accordion-item .collapse {
+        display: none;
+      }
+
+      .accordion-item[expanded] .expand {
+        display: none;
+      }
+
+      .accordion-item[expanded] .collapse {
+        display: inline-block;
+      }
+
+      .accordion-toggle {
+        background-color: #ffffff;
+        border-style: none;
+      }
+
+      .accordion-toggle h2 {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 600;
+        color: #000000;
+      }
+
+      .accordion-toggle h2 .icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 16px;
+        line-height: 18px;
+        border-radius: 9999px;
+        font-size: 24px;
+        text-align: center;
+        color: #ffffff;
+        background-color: #000000;
+      }
+
+      .accordion-toggle:focus {
+        outline: 0;
+      }
+
+      .accordion-content {
+        padding-top: 16px;
+        padding-bottom: 16px;
+      }
+
+      .inline-code {
+        padding: 2px 8px;
+        font-family: Menlo, Consolas, monospace;
+        border-radius: 4px;
+        border: 1px solid #e2e8f0;
+        font-size: 12px;
+        color: #e53e3e;
+        background-color: #f7fafc;
+      }
+
+      .bg-white {
+        background-color: #ffffff;
+      }
+
+      .bg-gray-200 {
+        background-color: #edf2f7;
+      }
+
+      .rounded {
+        border-radius: 4px;
+      }
+
+      .cursor-default {
+        cursor: default;
+      }
+
+      .font-sans {
+        font-family: -apple-system, "Segoe UI", sans-serif;
+      }
+
+      .font-semibold {
+        font-weight: 600;
+      }
+
+      .text-xs {
+        font-size: 12px;
+      }
+
+      .text-base {
+        font-size: 16px;
+      }
+
+      .text-3xl {
+        font-size: 30px;
+      }
+
+      .leading-24 {
+        line-height: 24px;
+      }
+
+      .leading-none {
+        line-height: 1;
+      }
+
+      .m-0 {
+        margin: 0;
+      }
+
+      .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .mb-4 {
+        margin-bottom: 4px;
+      }
+
+      .mb-16 {
+        margin-bottom: 16px;
+      }
+
+      .mb-24 {
+        margin-bottom: 24px;
+      }
+
+      .mb-48 {
+        margin-bottom: 48px;
+      }
+
+      .max-w-600 {
+        max-width: 600px;
+      }
+
+      .p-32 {
+        padding: 32px;
+      }
+
+      .px-24 {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      .py-32 {
+        padding-top: 32px;
+        padding-bottom: 32px;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .text-black {
+        color: #000000;
+      }
+
+      .text-gray-600 {
+        color: #718096;
+      }
+
+      .text-gray-700 {
+        color: #4a5568;
+      }
+
+      .text-gray-800 {
+        color: #2d3748;
+      }
+
+      .text-blue-500 {
+        color: #4299e1;
+      }
+
+      .italic {
+        font-style: italic;
+      }
+
+      .uppercase {
+        text-transform: uppercase;
+      }
+
+      .no-underline {
+        text-decoration: none;
+      }
+
+      .hover-underline:hover {
+        text-decoration: underline;
+      }
+
+      @media (min-width: 600px) {
+        .accordion-content {
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+
+        .md-p-48 {
+          padding: 48px;
+        }
+      }
+    </style>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+  </head>
+
+  <body class="bg-gray-200">
+    <div class="font-sans bg-gray-200">
+      <div class="max-w-600 mx-auto">
+        <div class="px-24">
+          <header class="py-32 md-p-48 text-center">
+            <a href="https://maizzle.com">
+              <amp-img src="https://res.cloudinary.com/maizzle/image/upload/v1552393888/misc/maizzle.png" width="75" height="50" alt="Maizzle logo">
+              </amp-img>
+            </a>
+          </header>
+          <section class="p-32 mb-48 text-base leading-24 rounded bg-white text-gray-800">
+            <h1 class="m-0 mb-16 text-3xl font-semibold text-black">Accordion</h1>
+            <p class="m-0 mb-24 text-gray-700">UI element made up of vertically stacked items. Each item can be expanded or collapsed to reveal or hide its content.</p>
+            <amp-accordion>
+              <section class="accordion-item">
+                <header class="accordion-toggle">
+                  <h2>
+                    <span class="icon expand">+</span>
+                    <span class="icon collapse">&ndash;</span>
+                    <span>When should you use an accordion?</span>
+                  </h2>
+                </header>
+                <div class="accordion-content">
+                  <p class="m-0">Anytime you want to toggle the display of some content.</p>
+                </div>
+              </section>
+              <section class="accordion-item">
+                <header class="accordion-toggle">
+                  <h2>
+                    <span class="icon expand">+</span>
+                    <span class="icon collapse">&ndash;</span>
+                    <span>Why should you use it?</span>
+                  </h2>
+                </header>
+                <div class="accordion-content">It's great for saving (vertical) space in your emails.</div>
+              </section>
+              <section class="accordion-item">
+                <header class="accordion-toggle">
+                  <h2>
+                    <span class="icon expand">+</span>
+                    <span class="icon collapse">&ndash;</span>
+                    <span>Can I have just one item open at a time?</span>
+                  </h2>
+                </header>
+                <div class="accordion-content">Sure, just use the <span class="inline-code">expand-single-section</span> attribute on the <span class="inline-code">&lt;amp-accordion&gt;</span> element.</div>
+              </section>
+              <section class="accordion-item">
+                <header class="accordion-toggle">
+                  <h2>
+                    <span class="icon expand">+</span>
+                    <span class="icon collapse">&ndash;</span>
+                    <span>What if I want one of the items already expanded?</span>
+                  </h2>
+                </header>
+                <div class="accordion-content">Add the <span class="inline-code">expanded</span> attribute on the <span class="inline-code">&lt;section&gt;</span> element you want to show as expanded.</div>
+              </section>
+            </amp-accordion>
+          </section>
+          <footer class="px-24 text-xs text-center text-gray-600 leading-none">
+            <p class="m-0 mb-4 uppercase">Powered by Maizzle</p>
+            <p class="m-0 italic">The framework for rapid email prototyping</p>
+            <p class="cursor-default">
+              <a href="https://maizzle.com/docs/" class="text-blue-500 no-underline hover-underline">Docs</a> &bull;
+              <a href="https://github.com/maizzle" class="text-blue-500 no-underline hover-underline">Github</a> &bull;
+              <a href="https://twitter.com/maizzlejs" class="text-blue-500 no-underline hover-underline">Twitter</a>
+            </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
