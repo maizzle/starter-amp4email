@@ -15,11 +15,9 @@ module.exports = {
       path: 'build_production',
     },
   },
-
   prettify: {
     enabled: true,
   },
-
   removeUnusedCSS: {
     enabled: true,
     whitelist: ['.amp*'],
