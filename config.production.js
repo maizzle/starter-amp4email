@@ -11,8 +11,10 @@
 
 module.exports = {
   build: {
-    destination: {
-      path: 'build_production',
+    templates: {
+      destination: {
+        path: 'build_production',
+      },
     },
   },
   prettify: {
