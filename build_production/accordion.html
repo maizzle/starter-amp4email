@@ -24,17 +24,17 @@
 
       img {
         border: 0;
-        max-width: 100%;
         line-height: 100%;
+        max-width: 100%;
         vertical-align: middle;
       }
 
       .accordion-item {
+        border: solid #e5e7eb;
+        border-width: 0px 0px 1px;
+        margin-bottom: 8px;
         padding-top: 16px;
         padding-bottom: 16px;
-        margin-bottom: 8px;
-        border: solid #e5e7eb;
-        border-width: 0 0 1px;
       }
 
       .accordion-item:last-child {
@@ -61,35 +61,36 @@
       .accordion-toggle h2 {
         display: flex;
         align-items: center;
-        font-size: 18px;
         font-weight: 600;
+        font-size: 18px;
         color: #000000;
       }
 
       .accordion-toggle h2 .icon {
-        width: 24px;
-        height: 24px;
-        margin-right: 16px;
-        line-height: 18px;
+        background-color: #000000;
         border-radius: 9999px;
+        height: 24px;
         font-size: 24px;
+        line-height: 18px;
+        margin-right: 16px;
         text-align: center;
         color: #ffffff;
-        background-color: #000000;
+        width: 24px;
       }
 
       .accordion-toggle:focus {
-        outline: 0;
+        outline: 2px solid transparent;
+        outline-offset: 2px;
       }
 
       .inline-code {
-        padding: 2px 8px;
-        font-family: Menlo, Consolas, monospace;
+        background-color: #f3f4f6;
         border-radius: 4px;
-        border: 1px solid #d2d6dc;
+        border: 1px solid #d1d5db;
+        font-family: Menlo, Consolas, monospace;
         font-size: 12px;
-        color: #e02424;
-        background-color: #f4f5f7;
+        padding: 2px 8px;
+        color: #dc2626;
       }
 
       .bg-white {
@@ -184,6 +185,10 @@
         padding-bottom: 32px;
       }
 
+      * {
+        --tw-shadow: 0 0 #0000;
+      }
+
       .text-center {
         text-align: center;
       }
@@ -201,11 +206,11 @@
       }
 
       .text-gray-800 {
-        color: #252f3f;
+        color: #1f2937;
       }
 
       .text-blue-500 {
-        color: #3f83f8;
+        color: #3b82f6;
       }
 
       .italic {
