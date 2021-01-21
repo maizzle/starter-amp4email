@@ -17,11 +17,8 @@ module.exports = {
       },
     },
   },
-  prettify: {
-    enabled: true,
-  },
+  prettify: true,
   removeUnusedCSS: {
-    enabled: true,
     whitelist: ['.amp*'],
   },
 }
