@@ -5,7 +5,8 @@
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <style amp4email-boilerplate>body{visibility:hidden;}</style>
   <if condition="page.googleFonts">
-    <link href="https://fonts.googleapis.com/css?family={{ page.googleFonts }}" rel="stylesheet" media="screen">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?{{{ page.googleFonts }}}&display=swap" rel="stylesheet" media="screen">
   </if>
   <if condition="page.css">
     <style amp-custom>

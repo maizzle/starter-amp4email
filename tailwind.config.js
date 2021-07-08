@@ -1,7 +1,10 @@
 module.exports = {
+  mode: 'jit',
   important: false,
   theme: {
-    screens: {md: '600px',},
+    screens: {
+      md: '600px',
+    },
     extend: {
       spacing: {
         screen: '100vw',
@@ -66,17 +69,23 @@ module.exports = {
         '11/12': '91.666667%',
       },
       borderRadius: {
+        none: '0px',
         sm: '2px',
         DEFAULT: '4px',
+        md: '6px',
         lg: '8px',
+        xl: '12px',
+        '2xl': '16px',
+        '3xl': '24px',
+        full: '9999px',
       },
       fontFamily: {
-        sans: ['-apple-system', '"Segoe UI"', 'sans-serif'],
-        serif: ['Constantia', 'Georgia', 'serif'],
-        mono: ['Menlo', 'Consolas', 'monospace'],
+        sans: ['ui-sans-serif', 'system-ui', '-apple-system', '"Segoe UI"', 'sans-serif'],
+        serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+        mono: ['ui-monospace', 'Menlo', 'Consolas', 'monospace'],
       },
       fontSize: {
-        '0': 0,
+        0: '0',
         xs: '12px',
         sm: '14px',
         base: '16px',
@@ -86,17 +95,15 @@ module.exports = {
         '3xl': '30px',
         '4xl': '36px',
         '5xl': '48px',
+        '6xl': '60px',
+        '7xl': '72px',
+        '8xl': '96px',
+        '9xl': '128px',
       },
       inset: theme => ({
         ...theme('spacing'),
       }),
       letterSpacing: theme => ({
-        tighter: '-2px',
-        tight: '-1px',
-        normal: '0',
-        wide: '1px',
-        wider: '2px',
-        widest: '4px',
         ...theme('spacing'),
       }),
       lineHeight: theme => ({
@@ -107,6 +114,17 @@ module.exports = {
       }),
       maxWidth: theme => ({
         ...theme('spacing'),
+        xs: '160px',
+        sm: '192px',
+        md: '224px',
+        lg: '256px',
+        xl: '288px',
+        '2xl': '336px',
+        '3xl': '384px',
+        '4xl': '448px',
+        '5xl': '512px',
+        '6xl': '576px',
+        '7xl': '640px',
       }),
       minHeight: theme => ({
         ...theme('spacing'),

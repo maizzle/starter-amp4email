@@ -1,4 +1,3 @@
-/*! purgecss start ignore */
 .accordion-item {
   @apply py-16 mb-8 border-solid border-0 border-b border-gray-200;
 
@@ -48,4 +47,3 @@
 .inline-code {
   @apply px-8 py-2 font-mono rounded border-solid border border-gray-300 text-xs text-red-600 bg-gray-100;
 }
-/*! purgecss end ignore */
