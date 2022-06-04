@@ -2,6 +2,7 @@
 <html ⚡4email>
 <head>
   <meta charset="{{ page.charset || 'utf-8' }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <style amp4email-boilerplate>body{visibility:hidden;}</style>
   <if condition="page.googleFonts">
@@ -24,7 +25,7 @@
   </if>
   <block name="head"></block>
 </head>
-<body class="{{ page.bodyClass || '' }}">
+<body class="m-0 p-0 w-full [word-break:break-word] [-webkit-font-smoothing:antialiased] {{ page.bodyClass || '' }}">
   <block name="template"></block>
 </body>
 </html>

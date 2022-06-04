@@ -1,315 +1,275 @@
 <!doctype html>
 <html ⚡4email="">
-
-  <head>
-    <meta charset="utf-8">
-    <script async="" src="https://cdn.ampproject.org/v0.js"></script>
-    <style amp4email-boilerplate="">
-      body {
-        visibility: hidden;
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script async="" src="https://cdn.ampproject.org/v0.js"></script>
+  <style amp4email-boilerplate="">
+    body {
+      visibility: hidden;
+    }
+  </style>
+  <style amp-custom="">
+    .amp-carousel-button {
+      background-color: rgba(76, 81, 191, 0.75);
+      cursor: pointer;
+    }
+    img {
+      max-width: 100%;
+      vertical-align: middle;
+      line-height: 100%;
+      border: 0
+    }
+    .accordion-item {
+      margin-bottom: 8px;
+      border: solid #e5e7eb;
+      border-width: 0px 0px 1px;
+      padding-top: 16px;
+      padding-bottom: 16px
+    }
+    .accordion-item:last-child {
+      border-style: none
+    }
+    .accordion-item .collapse {
+      display: none
+    }
+    .accordion-item[expanded] .expand {
+      display: none
+    }
+    .accordion-item[expanded] .collapse {
+      display: inline-block
+    }
+    .accordion-toggle {
+      border-style: none;
+      background-color: #fff
+    }
+    .accordion-toggle h2 {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 600;
+      color: #000
+    }
+    .accordion-toggle h2 .icon {
+      margin-right: 16px;
+      height: 24px;
+      width: 24px;
+      border-radius: 9999px;
+      background-color: #000;
+      text-align: center;
+      font-size: 24px;
+      line-height: 18px;
+      color: #fff
+    }
+    .accordion-toggle:focus {
+      outline: 2px solid transparent;
+      outline-offset: 2px
+    }
+    .inline-code {
+      border-radius: 4px;
+      border: 1px solid #d1d5db;
+      background-color: #f3f4f6;
+      padding: 2px 8px;
+      font-family: ui-monospace, Menlo, Consolas, monospace;
+      font-size: 12px;
+      color: #dc2626
+    }
+    .m-0 {
+      margin: 0
+    }
+    .mx-auto {
+      margin-left: auto;
+      margin-right: auto
+    }
+    .mb-12 {
+      margin-bottom: 48px
+    }
+    .mb-4 {
+      margin-bottom: 16px
+    }
+    .mb-6 {
+      margin-bottom: 24px
+    }
+    .mb-1 {
+      margin-bottom: 4px
+    }
+    .w-full {
+      width: 100%
+    }
+    .max-w-600px {
+      max-width: 600px
+    }
+    .shrink-0 {
+      flex-shrink: 0
+    }
+    .cursor-default {
+      cursor: default
+    }
+    .rounded {
+      border-radius: 4px
+    }
+    .bg-white {
+      background-color: #fff
+    }
+    .bg-gray-200 {
+      background-color: #e5e7eb
+    }
+    .p-0 {
+      padding: 0
+    }
+    .p-8 {
+      padding: 32px
+    }
+    .py-4 {
+      padding-top: 16px;
+      padding-bottom: 16px
+    }
+    .px-6 {
+      padding-left: 24px;
+      padding-right: 24px
+    }
+    .py-8 {
+      padding-top: 32px;
+      padding-bottom: 32px
+    }
+    .text-center {
+      text-align: center
+    }
+    .font-sans {
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif
+    }
+    .text-xs {
+      font-size: 12px
+    }
+    .text-base {
+      font-size: 16px
+    }
+    .text-3xl {
+      font-size: 30px
+    }
+    .font-semibold {
+      font-weight: 600
+    }
+    .uppercase {
+      text-transform: uppercase
+    }
+    .italic {
+      font-style: italic
+    }
+    .leading-6 {
+      line-height: 24px
+    }
+    .leading-none {
+      line-height: 1
+    }
+    .text-gray-800 {
+      color: #1f2937
+    }
+    .text-black {
+      color: #000
+    }
+    .text-gray-700 {
+      color: #374151
+    }
+    .text-gray-600 {
+      color: #4b5563
+    }
+    .text-blue-500 {
+      color: #3b82f6
+    }
+    .no-underline {
+      text-decoration-line: none
+    }
+    .word-break-break-word {
+      word-break: break-word
+    }
+    .-webkit-font-smoothing-antialiased {
+      -webkit-font-smoothing: antialiased
+    }
+    .hover-underline:hover {
+      text-decoration-line: underline
+    }
+    @media (min-width: 600px) {
+      .md-p-12 {
+        padding: 48px
       }
-    </style>
-    <style amp-custom="">
-      .amp-carousel-button {
-        background-color: rgba(76, 81, 191, 0.75);
-        cursor: pointer;
+      .md-px-10 {
+        padding-left: 40px;
+        padding-right: 40px
       }
-
-      body {
-        margin: 0;
-        width: 100%;
-        padding: 0;
-        word-break: break-word;
-        -webkit-font-smoothing: antialiased
-      }
-
-      img {
-        max-width: 100%;
-        vertical-align: middle;
-        line-height: 100%;
-        border: 0
-      }
-
-      .accordion-item {
-        margin-bottom: 8px;
-        border: solid #e5e7eb;
-        border-width: 0px 0px 1px;
-        padding-top: 16px;
-        padding-bottom: 16px
-      }
-
-      .accordion-item:last-child {
-        border-style: none
-      }
-
-      .accordion-item .collapse {
-        display: none
-      }
-
-      .accordion-item[expanded] .expand {
-        display: none
-      }
-
-      .accordion-item[expanded] .collapse {
-        display: inline-block
-      }
-
-      .accordion-toggle {
-        border-style: none;
-        background-color: #ffffff
-      }
-
-      .accordion-toggle h2 {
-        display: flex;
-        align-items: center;
-        font-size: 18px;
-        font-weight: 600;
-        color: #000000
-      }
-
-      .accordion-toggle h2 .icon {
-        margin-right: 16px;
-        height: 24px;
-        width: 24px;
-        border-radius: 9999px;
-        background-color: #000000;
-        text-align: center;
-        font-size: 24px;
-        line-height: 18px;
-        color: #ffffff
-      }
-
-      .accordion-toggle:focus {
-        outline: 2px solid transparent;
-        outline-offset: 2px
-      }
-
-      .inline-code {
-        border-radius: 4px;
-        border: 1px solid #d1d5db;
-        background-color: #f3f4f6;
-        padding: 2px 8px;
-        font-family: ui-monospace, Menlo, Consolas, monospace;
-        font-size: 12px;
-        color: #dc2626
-      }
-
-      .m-0 {
-        margin: 0
-      }
-
-      .mx-auto {
-        margin-left: auto;
-        margin-right: auto
-      }
-
-      .mb-48 {
-        margin-bottom: 48px
-      }
-
-      .mb-16 {
-        margin-bottom: 16px
-      }
-
-      .mb-24 {
-        margin-bottom: 24px
-      }
-
-      .mb-4 {
-        margin-bottom: 4px
-      }
-
-      .max-w-600 {
-        max-width: 600px
-      }
-
-      .cursor-default {
-        cursor: default
-      }
-
-      .rounded {
-        border-radius: 4px
-      }
-
-      .bg-white {
-        background-color: #ffffff
-      }
-
-      .bg-gray-200 {
-        background-color: #e5e7eb
-      }
-
-      .p-32 {
-        padding: 32px
-      }
-
-      .py-16 {
-        padding-top: 16px;
-        padding-bottom: 16px
-      }
-
-      .px-24 {
-        padding-left: 24px;
-        padding-right: 24px
-      }
-
-      .py-32 {
-        padding-top: 32px;
-        padding-bottom: 32px
-      }
-
-      .text-center {
-        text-align: center
-      }
-
-      .font-sans {
-        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif
-      }
-
-      .text-xs {
-        font-size: 12px
-      }
-
-      .text-base {
-        font-size: 16px
-      }
-
-      .text-3xl {
-        font-size: 30px
-      }
-
-      .font-semibold {
-        font-weight: 600
-      }
-
-      .uppercase {
-        text-transform: uppercase
-      }
-
-      .italic {
-        font-style: italic
-      }
-
-      .leading-24 {
-        line-height: 24px
-      }
-
-      .leading-none {
-        line-height: 1
-      }
-
-      .text-gray-800 {
-        color: #1f2937
-      }
-
-      .text-black {
-        color: #000000
-      }
-
-      .text-gray-700 {
-        color: #374151
-      }
-
-      .text-gray-600 {
-        color: #4b5563
-      }
-
-      .text-blue-500 {
-        color: #3b82f6
-      }
-
-      .no-underline {
-        text-decoration: none
-      }
-
-      .hover-underline:hover {
-        text-decoration: underline
-      }
-
-      @media (min-width: 600px) {
-        .md-p-48 {
-          padding: 48px
-        }
-
-        .md-px-40 {
-          padding-left: 40px;
-          padding-right: 40px
-        }
-      }
-    </style>
-    <script async="" custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
-  </head>
-
-  <body class="bg-gray-200">
-    <div class="font-sans bg-gray-200">
-      <div class="max-w-600 mx-auto">
-        <div class="px-24">
-          <header class="py-32 md-p-48 text-center">
-            <a href="https://maizzle.com">
-              <amp-img src="https://res.cloudinary.com/maizzle/image/upload/v1552393888/misc/maizzle.png" width="75" height="50" alt="Maizzle logo">
-              </amp-img>
-            </a>
-          </header>
-          <section class="p-32 mb-48 text-base leading-24 rounded bg-white text-gray-800">
-            <h1 class="m-0 mb-16 text-3xl font-semibold text-black">Accordion</h1>
-            <p class="m-0 mb-24 text-gray-700">UI element made up of vertically stacked items. Each item can be expanded or collapsed to reveal or hide its content.</p>
-            <amp-accordion>
-              <section class="accordion-item">
-                <header class="accordion-toggle">
-                  <h2>
-                    <span class="icon expand">+</span>
-                    <span class="icon collapse">&ndash;</span>
-                    <span>When should you use an accordion?</span>
-                  </h2>
-                </header>
-                <div class="py-16 md-px-40">
-                  <p class="m-0">Anytime you want to toggle the display of some content.</p>
-                </div>
-              </section>
-              <section class="accordion-item">
-                <header class="accordion-toggle">
-                  <h2>
-                    <span class="icon expand">+</span>
-                    <span class="icon collapse">&ndash;</span>
-                    <span>Why should you use it?</span>
-                  </h2>
-                </header>
-                <div class="py-16 md-px-40">It's great for saving (vertical) space in your emails.</div>
-              </section>
-              <section class="accordion-item">
-                <header class="accordion-toggle">
-                  <h2>
-                    <span class="icon expand">+</span>
-                    <span class="icon collapse">&ndash;</span>
-                    <span>Can I have just one item open at a time?</span>
-                  </h2>
-                </header>
-                <div class="py-16 md-px-40">Sure, just use the <span class="inline-code">expand-single-section</span> attribute on the <span class="inline-code">&lt;amp-accordion&gt;</span> element.</div>
-              </section>
-              <section class="accordion-item">
-                <header class="accordion-toggle">
-                  <h2>
-                    <span class="icon expand">+</span>
-                    <span class="icon collapse">&ndash;</span>
-                    <span>What if I want one of the items already expanded?</span>
-                  </h2>
-                </header>
-                <div class="py-16 md-px-40">Add the <span class="inline-code">expanded</span> attribute on the <span class="inline-code">&lt;section&gt;</span> element you want to show as expanded.</div>
-              </section>
-            </amp-accordion>
-          </section>
-          <footer class="px-24 text-xs text-center text-gray-600 leading-none">
-            <p class="m-0 mb-4 uppercase">Powered by Maizzle</p>
-            <p class="m-0 italic">The framework for rapid email prototyping</p>
-            <p class="cursor-default">
-              <a href="https://maizzle.com/docs/" class="text-blue-500 no-underline hover-underline">Docs</a> &bull;
-              <a href="https://github.com/maizzle" class="text-blue-500 no-underline hover-underline">Github</a> &bull;
-              <a href="https://twitter.com/maizzlejs" class="text-blue-500 no-underline hover-underline">Twitter</a>
-            </p>
-          </footer>
-        </div>
+    }
+  </style>
+  <script async="" custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+</head>
+<body class="m-0 p-0 w-full word-break-break-word -webkit-font-smoothing-antialiased bg-gray-200">
+  <div class="font-sans bg-gray-200">
+    <div class="max-w-600px mx-auto">
+      <div class="px-6">
+        <header class="py-8 md-p-12 text-center">
+          <a href="https://maizzle.com">
+            <amp-img src="https://res.cloudinary.com/maizzle/image/upload/v1552393888/misc/maizzle.png" width="75" height="50" alt="Maizzle logo">
+            </amp-img>
+          </a>
+        </header>
+        <section class="p-8 mb-12 text-base leading-6 rounded bg-white text-gray-800">
+          <h1 class="m-0 mb-4 text-3xl font-semibold text-black">Accordion</h1>
+          <p class="m-0 mb-6 text-gray-700">UI element made up of vertically stacked items. Each item can be expanded or collapsed to reveal or hide its content.</p>
+          <amp-accordion>
+            <section class="accordion-item">
+              <header class="accordion-toggle">
+                <h2>
+                  <span class="icon expand shrink-0">+</span>
+                  <span class="icon collapse shrink-0">&ndash;</span>
+                  <span>When should you use an accordion?</span>
+                </h2>
+              </header>
+              <div class="py-4 md-px-10">
+                <p class="m-0">Anytime you want to toggle the display of some content.</p>
+              </div>
+            </section>
+            <section class="accordion-item">
+              <header class="accordion-toggle">
+                <h2>
+                  <span class="icon expand shrink-0">+</span>
+                  <span class="icon collapse shrink-0">&ndash;</span>
+                  <span>Why should you use it?</span>
+                </h2>
+              </header>
+              <div class="py-4 md-px-10">It's great for saving (vertical) space in your emails.</div>
+            </section>
+            <section class="accordion-item">
+              <header class="accordion-toggle">
+                <h2>
+                  <span class="icon expand shrink-0">+</span>
+                  <span class="icon collapse shrink-0">&ndash;</span>
+                  <span>Can I have just one item open at a time?</span>
+                </h2>
+              </header>
+              <div class="py-4 md-px-10">Sure, just use the <span class="inline-code">expand-single-section</span> attribute on the <span class="inline-code">&lt;amp-accordion&gt;</span> element.</div>
+            </section>
+            <section class="accordion-item">
+              <header class="accordion-toggle">
+                <h2>
+                  <span class="icon expand shrink-0">+</span>
+                  <span class="icon collapse shrink-0">&ndash;</span>
+                  <span>What if I want one of the items already expanded?</span>
+                </h2>
+              </header>
+              <div class="py-4 md-px-10">Add the <span class="inline-code">expanded</span> attribute on the <span class="inline-code">&lt;section&gt;</span> element you want to show as expanded.</div>
+            </section>
+          </amp-accordion>
+        </section>
+        <footer class="px-6 text-xs text-center text-gray-600 leading-none">
+          <p class="m-0 mb-1 uppercase">Powered by Maizzle</p>
+          <p class="m-0 italic">Quickly build HTML emails with utility-first CSS</p>
+          <p class="cursor-default">
+            <a href="https://maizzle.com/docs/" class="text-blue-500 no-underline hover-underline">Docs</a> &bull;
+            <a href="https://github.com/maizzle" class="text-blue-500 no-underline hover-underline">Github</a> &bull;
+            <a href="https://twitter.com/maizzlejs" class="text-blue-500 no-underline hover-underline">Twitter</a>
+          </p>
+        </footer>
       </div>
     </div>
-  </body>
-
+  </div>
+</body>
 </html>

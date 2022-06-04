@@ -23,16 +23,25 @@ Scaffold a new project with this starter:
 maizzle new amp4email
 ```
 
-Develop locally:
+Alternatively, you may clone this starter directly:
+
+```bash
+# remember to install dependencies with `npm install`
+npx degit maizzle/starter-netlify-identity
+```
+
+## Development
+
+Start a local development server:
 
 ```
-maizzle serve
+npm run dev
 ```
 
 Build for production:
 
 ```
-maizzle build production
+npm run build
 ```
 
 ## Documentation
