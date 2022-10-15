@@ -1,18 +1,17 @@
 <!doctype html>
 <html ⚡4email>
-<head>
-  <meta charset="{{ page.charset || 'utf-8' }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <style amp4email-boilerplate>body{visibility:hidden;}</style>
-  <if condition="page.googleFonts">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?{{{ page.googleFonts }}}&display=swap" rel="stylesheet" media="screen">
-  </if>
-  <if condition="page.css">
+  <head>
+    <meta charset="{{ page.charset || 'utf-8' }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <style amp4email-boilerplate>body{visibility:hidden;}</style>
+    <if condition="page.googleFonts">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?{{{ page.googleFonts }}}&display=swap" rel="stylesheet" media="screen">
+    </if>
     <style amp-custom>
       .amp-carousel-button {
-        background-color: rgba(76,81,191,0.75);
+        background-color: rgba(76, 81, 191, 0.75);
         cursor: pointer;
       }
 
@@ -22,10 +21,9 @@
 
       {{{ page.css }}}
     </style>
-  </if>
-  <block name="head"></block>
-</head>
-<body class="m-0 p-0 w-full [word-break:break-word] [-webkit-font-smoothing:antialiased] {{ page.bodyClass || '' }}">
-  <block name="template"></block>
-</body>
+    <block name="head"></block>
+  </head>
+  <body class="m-0 p-0 w-full [word-break:break-word] [-webkit-font-smoothing:antialiased] {{ page.bodyClass || '' }}">
+    <block name="template"></block>
+  </body>
 </html>
