@@ -2,11 +2,12 @@
 bodyClass: bg-gray-200
 ---
 
-<extends src="src/layouts/main.html">
-  <block name="head">
-    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
-  </block>
-  <block name="template">
+<push name="head">
+  <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+</push>
+
+<x-main>
+  <fill:template>
     <div class="font-sans bg-gray-200">
       <div class="max-w-[600px] mx-auto">
         <div class="px-6">
@@ -16,7 +17,7 @@ bodyClass: bg-gray-200
                 src="https://res.cloudinary.com/maizzle/image/upload/misc/maizzle.png"
                 width="70"
                 height="51"
-                alt="Maizzle logo"
+                alt="Maizzle"
               />
             </a>
           </header>
@@ -24,8 +25,10 @@ bodyClass: bg-gray-200
             <h1 class="m-0 mb-4 text-3xl font-semibold text-black">
               Accordion
             </h1>
+
             <p class="m-0 mb-6 text-gray-700">
-              UI element made up of vertically stacked items. Each item can be expanded or collapsed to reveal or hide its content.
+              UI element made up of vertically stacked items.
+              Each item can be expanded or collapsed to reveal or hide its content.
             </p>
             <amp-accordion>
               <section class="accordion-item">
@@ -36,6 +39,7 @@ bodyClass: bg-gray-200
                     <span>When should you use an accordion?</span>
                   </h2>
                 </header>
+
                 <div class="py-4 md:px-10">
                   <p class="m-0">
                     Anytime you want to toggle the display of some content.
@@ -50,6 +54,7 @@ bodyClass: bg-gray-200
                     <span>Why should you use it?</span>
                   </h2>
                 </header>
+
                 <div class="py-4 md:px-10">
                   It's great for saving (vertical) space in your emails.
                 </div>
@@ -62,8 +67,10 @@ bodyClass: bg-gray-200
                     <span>Can I have just one item open at a time?</span>
                   </h2>
                 </header>
+
                 <div class="py-4 md:px-10">
-                  Sure, just use the <span class="inline-code">expand-single-section</span> attribute on the <span class="inline-code">&lt;amp-accordion&gt;</span> element.
+                  Sure, just use the <span class="inline-code">expand-single-section</span>
+                  attribute on the <span class="inline-code">&lt;amp-accordion&gt;</span> element.
                 </div>
               </section>
               <section class="accordion-item">
@@ -74,8 +81,11 @@ bodyClass: bg-gray-200
                     <span>What if I want one of the items already expanded?</span>
                   </h2>
                 </header>
+
                 <div class="py-4 md:px-10">
-                  Add the <span class="inline-code">expanded</span> attribute on the <span class="inline-code">&lt;section&gt;</span> element you want to show as expanded.
+                  Add the <span class="inline-code">expanded</span> attribute
+                  on the <span class="inline-code">&lt;section&gt;</span> element
+                  you want to show as expanded.
                 </div>
               </section>
             </amp-accordion>
@@ -84,17 +94,19 @@ bodyClass: bg-gray-200
             <p class="m-0 mb-1 uppercase">
               Powered by Maizzle
             </p>
+
             <p class="m-0 italic">
               Quickly build HTML emails with utility-first CSS
             </p>
+
             <p class="cursor-default">
-              <a href="https://maizzle.com/docs/" class="text-blue-500 no-underline hover:underline">Docs</a> &bull;
-              <a href="https://github.com/maizzle" class="text-blue-500 no-underline hover:underline">Github</a> &bull;
-              <a href="https://twitter.com/maizzlejs" class="text-blue-500 no-underline hover:underline">Twitter</a>
+              <a href="https://maizzle.com/docs/" class="text-blue-500 hover:[text-decoration:underline]">Docs</a> &bull;
+              <a href="https://github.com/maizzle" class="text-blue-500 hover:[text-decoration:underline]">Github</a> &bull;
+              <a href="https://twitter.com/maizzlejs" class="text-blue-500 hover:[text-decoration:underline]">Twitter</a>
             </p>
           </footer>
         </div>
       </div>
     </div>
-  </block>
-</extends>
+  </fill:template>
+</x-main>
