@@ -9,3 +9,7 @@ img {
   @apply max-w-full leading-full align-middle;
   border: 0;
 }
+
+a {
+  text-decoration: none;
+}
