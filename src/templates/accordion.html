@@ -1,112 +1,106 @@
----
-bodyClass: bg-gray-200
----
-
-<push name="head">
-  <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
-</push>
-
 <x-main>
-  <fill:template>
-    <div class="font-sans bg-gray-200">
-      <div class="max-w-[600px] mx-auto">
-        <div class="px-6">
-          <header class="py-8 md:p-12 text-center">
-            <a href="https://maizzle.com">
-              <amp-img
-                src="https://res.cloudinary.com/maizzle/image/upload/misc/maizzle.png"
-                width="70"
-                height="51"
-                alt="Maizzle"
-              />
-            </a>
-          </header>
-          <section class="p-8 mb-12 text-base leading-6 rounded bg-white text-gray-800">
-            <h1 class="m-0 mb-4 text-3xl font-semibold text-black">
-              Accordion
-            </h1>
+  <push name="head">
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+  </push>
 
-            <p class="m-0 mb-6 text-gray-700">
-              UI element made up of vertically stacked items.
-              Each item can be expanded or collapsed to reveal or hide its content.
-            </p>
-            <amp-accordion>
-              <section class="accordion-item">
-                <header class="accordion-toggle">
-                  <h2>
-                    <span class="icon expand shrink-0">+</span>
-                    <span class="icon collapse shrink-0">&ndash;</span>
-                    <span>When should you use an accordion?</span>
-                  </h2>
-                </header>
+  <div class="font-sans bg-slate-200">
+    <div class="max-w-[600px] mx-auto">
+      <div class="px-6">
+        <header class="py-8 md:p-12 text-center">
+          <a href="https://maizzle.com">
+            <amp-img
+              src="https://res.cloudinary.com/maizzle/image/upload/misc/maizzle.png"
+              width="70"
+              height="51"
+              alt="Maizzle"
+            />
+          </a>
+        </header>
+        <section class="p-8 mb-12 text-base leading-6 rounded-lg bg-white text-slate-800">
+          <h1 class="m-0 mb-4 text-3xl font-semibold text-black">
+            Accordion
+          </h1>
 
-                <div class="py-4 md:px-10">
-                  <p class="m-0">
-                    Anytime you want to toggle the display of some content.
-                  </p>
-                </div>
-              </section>
-              <section class="accordion-item">
-                <header class="accordion-toggle">
-                  <h2>
-                    <span class="icon expand shrink-0">+</span>
-                    <span class="icon collapse shrink-0">&ndash;</span>
-                    <span>Why should you use it?</span>
-                  </h2>
-                </header>
+          <p class="m-0 mb-6 text-slate-700">
+            UI element made up of vertically stacked items.
+            Each item can be expanded or collapsed to reveal or hide its content.
+          </p>
+          <amp-accordion>
+            <section class="accordion-item">
+              <header class="accordion-toggle">
+                <h2>
+                  <span class="icon expand shrink-0">+</span>
+                  <span class="icon collapse shrink-0">&ndash;</span>
+                  <span>When should you use an accordion?</span>
+                </h2>
+              </header>
 
-                <div class="py-4 md:px-10">
-                  It's great for saving (vertical) space in your emails.
-                </div>
-              </section>
-              <section class="accordion-item">
-                <header class="accordion-toggle">
-                  <h2>
-                    <span class="icon expand shrink-0">+</span>
-                    <span class="icon collapse shrink-0">&ndash;</span>
-                    <span>Can I have just one item open at a time?</span>
-                  </h2>
-                </header>
+              <div class="py-4 md:px-10">
+                <p class="m-0">
+                  Anytime you want to toggle the display of some content.
+                </p>
+              </div>
+            </section>
+            <section class="accordion-item">
+              <header class="accordion-toggle">
+                <h2>
+                  <span class="icon expand shrink-0">+</span>
+                  <span class="icon collapse shrink-0">&ndash;</span>
+                  <span>Why should you use it?</span>
+                </h2>
+              </header>
 
-                <div class="py-4 md:px-10">
-                  Sure, just use the <span class="inline-code">expand-single-section</span>
-                  attribute on the <span class="inline-code">&lt;amp-accordion&gt;</span> element.
-                </div>
-              </section>
-              <section class="accordion-item">
-                <header class="accordion-toggle">
-                  <h2>
-                    <span class="icon expand shrink-0">+</span>
-                    <span class="icon collapse shrink-0">&ndash;</span>
-                    <span>What if I want one of the items already expanded?</span>
-                  </h2>
-                </header>
+              <div class="py-4 md:px-10">
+                It's great for saving (vertical) space in your emails.
+              </div>
+            </section>
+            <section class="accordion-item">
+              <header class="accordion-toggle">
+                <h2>
+                  <span class="icon expand shrink-0">+</span>
+                  <span class="icon collapse shrink-0">&ndash;</span>
+                  <span>Can I have just one item open at a time?</span>
+                </h2>
+              </header>
 
-                <div class="py-4 md:px-10">
-                  Add the <span class="inline-code">expanded</span> attribute
-                  on the <span class="inline-code">&lt;section&gt;</span> element
-                  you want to show as expanded.
-                </div>
-              </section>
-            </amp-accordion>
-          </section>
-          <footer class="px-6 text-xs text-center text-gray-600 leading-none">
-            <p class="m-0 mb-1 uppercase">
-              Powered by Maizzle
-            </p>
+              <div class="py-4 md:px-10">
+                Sure, just use the <span class="inline-code">expand-single-section</span>
+                attribute on the <span class="inline-code">&lt;amp-accordion&gt;</span> element.
+              </div>
+            </section>
+            <section class="accordion-item">
+              <header class="accordion-toggle">
+                <h2>
+                  <span class="icon expand shrink-0">+</span>
+                  <span class="icon collapse shrink-0">&ndash;</span>
+                  <span>What if I want one of the items already expanded?</span>
+                </h2>
+              </header>
 
-            <p class="m-0 italic">
-              Quickly build HTML emails with utility-first CSS
-            </p>
+              <div class="py-4 md:px-10">
+                Add the <span class="inline-code">expanded</span> attribute
+                on the <span class="inline-code">&lt;section&gt;</span> element
+                you want to show as expanded.
+              </div>
+            </section>
+          </amp-accordion>
+        </section>
+        <footer class="px-6 text-xs text-center text-slate-600 leading-none">
+          <p class="m-0 mb-1 uppercase">
+            Powered by Maizzle
+          </p>
 
-            <p class="cursor-default">
-              <a href="https://maizzle.com/docs/" class="text-blue-500 hover:[text-decoration:underline]">Docs</a> &bull;
-              <a href="https://github.com/maizzle" class="text-blue-500 hover:[text-decoration:underline]">Github</a> &bull;
-              <a href="https://twitter.com/maizzlejs" class="text-blue-500 hover:[text-decoration:underline]">Twitter</a>
-            </p>
-          </footer>
-        </div>
+          <p class="m-0 italic">
+            Quickly build HTML emails with utility-first CSS
+          </p>
+
+          <p class="cursor-default">
+            <a href="https://maizzle.com/docs/" class="text-blue-500 hover:[text-decoration:underline]">Docs</a> &bull;
+            <a href="https://github.com/maizzle" class="text-blue-500 hover:[text-decoration:underline]">Github</a> &bull;
+            <a href="https://twitter.com/maizzlejs" class="text-blue-500 hover:[text-decoration:underline]">Twitter</a>
+          </p>
+        </footer>
       </div>
     </div>
-  </fill:template>
+  </div>
 </x-main>

@@ -6,7 +6,7 @@
 */
 
 img {
-  @apply max-w-full leading-full align-middle;
+  @apply max-w-full leading-[100%] align-middle;
   border: 0;
 }
 

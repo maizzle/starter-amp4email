@@ -18,37 +18,42 @@
       max-width: 100%;
       vertical-align: middle;
       line-height: 100%;
-      border: 0
+      border: 0;
+    }
+    a {
+      text-decoration: none;
     }
     .accordion-item {
       margin-bottom: 8px;
-      border: solid #e5e7eb;
-      border-width: 0px 0px 1px;
+      border-width: 0px;
+      border-bottom-width: 1px;
+      border-style: solid;
+      border-color: #e5e7eb;
       padding-top: 16px;
-      padding-bottom: 16px
+      padding-bottom: 16px;
     }
     .accordion-item:last-child {
-      border-style: none
+      border-style: none;
     }
     .accordion-item .collapse {
-      display: none
+      display: none;
     }
     .accordion-item[expanded] .expand {
-      display: none
+      display: none;
     }
     .accordion-item[expanded] .collapse {
-      display: inline-block
+      display: inline-block;
     }
     .accordion-toggle {
       border-style: none;
-      background-color: #fff
+      background-color: #fff;
     }
     .accordion-toggle h2 {
       display: flex;
       align-items: center;
       font-size: 18px;
       font-weight: 600;
-      color: #000
+      color: #000;
     }
     .accordion-toggle h2 .icon {
       margin-right: 16px;
@@ -59,164 +64,169 @@
       text-align: center;
       font-size: 24px;
       line-height: 18px;
-      color: #fff
+      color: #fff;
     }
     .accordion-toggle:focus {
       outline: 2px solid transparent;
-      outline-offset: 2px
+      outline-offset: 2px;
     }
     .inline-code {
       border-radius: 4px;
-      border: 1px solid #d1d5db;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #d1d5db;
       background-color: #f3f4f6;
-      padding: 2px 8px;
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-top: 2px;
+      padding-bottom: 2px;
       font-family: ui-monospace, Menlo, Consolas, monospace;
       font-size: 12px;
-      color: #dc2626
+      color: #dc2626;
+    }
+    .collapse {
+      visibility: collapse;
     }
     .m-0 {
-      margin: 0
+      margin: 0;
     }
     .mx-auto {
       margin-left: auto;
-      margin-right: auto
-    }
-    .mb-12 {
-      margin-bottom: 48px
-    }
-    .mb-4 {
-      margin-bottom: 16px
-    }
-    .mb-6 {
-      margin-bottom: 24px
+      margin-right: auto;
     }
     .mb-1 {
-      margin-bottom: 4px
+      margin-bottom: 4px;
+    }
+    .mb-12 {
+      margin-bottom: 48px;
+    }
+    .mb-4 {
+      margin-bottom: 16px;
+    }
+    .mb-6 {
+      margin-bottom: 24px;
     }
     .w-full {
-      width: 100%
+      width: 100%;
     }
     .max-w-600px {
-      max-width: 600px
+      max-width: 600px;
     }
     .shrink-0 {
-      flex-shrink: 0
+      flex-shrink: 0;
     }
     .cursor-default {
-      cursor: default
+      cursor: default;
     }
-    .rounded {
-      border-radius: 4px
+    .rounded-lg {
+      border-radius: 8px;
+    }
+    .bg-slate-200 {
+      background-color: #e2e8f0;
     }
     .bg-white {
-      background-color: #fff
-    }
-    .bg-gray-200 {
-      background-color: #e5e7eb
+      background-color: #fff;
     }
     .p-0 {
-      padding: 0
+      padding: 0;
     }
     .p-8 {
-      padding: 32px
-    }
-    .py-4 {
-      padding-top: 16px;
-      padding-bottom: 16px
+      padding: 32px;
     }
     .px-6 {
       padding-left: 24px;
-      padding-right: 24px
+      padding-right: 24px;
+    }
+    .py-4 {
+      padding-top: 16px;
+      padding-bottom: 16px;
     }
     .py-8 {
       padding-top: 32px;
-      padding-bottom: 32px
+      padding-bottom: 32px;
     }
     .text-center {
-      text-align: center
+      text-align: center;
     }
     .font-sans {
-      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif
-    }
-    .text-xs {
-      font-size: 12px
-    }
-    .text-base {
-      font-size: 16px
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
     }
     .text-3xl {
-      font-size: 30px
+      font-size: 30px;
+    }
+    .text-base {
+      font-size: 16px;
+    }
+    .text-xs {
+      font-size: 12px;
     }
     .font-semibold {
-      font-weight: 600
+      font-weight: 600;
     }
     .uppercase {
-      text-transform: uppercase
+      text-transform: uppercase;
     }
     .italic {
-      font-style: italic
+      font-style: italic;
     }
     .leading-6 {
-      line-height: 24px
+      line-height: 24px;
     }
     .leading-none {
-      line-height: 1
-    }
-    .text-gray-800 {
-      color: #1f2937
+      line-height: 1;
     }
     .text-black {
-      color: #000
-    }
-    .text-gray-700 {
-      color: #374151
-    }
-    .text-gray-600 {
-      color: #4b5563
+      color: #000;
     }
     .text-blue-500 {
-      color: #3b82f6
+      color: #3b82f6;
     }
-    .no-underline {
-      text-decoration-line: none
+    .text-slate-600 {
+      color: #475569;
     }
-    .word-break-break-word {
-      word-break: break-word
+    .text-slate-700 {
+      color: #334155;
+    }
+    .text-slate-800 {
+      color: #1e293b;
     }
     .-webkit-font-smoothing-antialiased {
-      -webkit-font-smoothing: antialiased
+      -webkit-font-smoothing: antialiased;
     }
-    .hover-underline:hover {
-      text-decoration-line: underline
+    .word-break-break-word {
+      word-break: break-word;
+    }
+    .hover-text-decoration-underline:hover {
+      text-decoration: underline;
     }
     @media (min-width: 600px) {
       .md-p-12 {
-        padding: 48px
+        padding: 48px;
       }
       .md-px-10 {
         padding-left: 40px;
-        padding-right: 40px
+        padding-right: 40px;
       }
     }
   </style>
   <script async="" custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
 </head>
-<body class="m-0 p-0 w-full word-break-break-word -webkit-font-smoothing-antialiased bg-gray-200">
-  <div class="font-sans bg-gray-200">
+<body class="m-0 p-0 w-full word-break-break-word -webkit-font-smoothing-antialiased bg-slate-200">
+  <div class="font-sans bg-slate-200">
     <div class="max-w-600px mx-auto">
       <div class="px-6">
         <header class="py-8 md-p-12 text-center">
           <a href="https://maizzle.com">
-            <amp-img src="https://res.cloudinary.com/maizzle/image/upload/misc/maizzle.png" width="70" height="51" alt="Maizzle logo">
-            </amp-img>
+            <amp-img src="https://res.cloudinary.com/maizzle/image/upload/misc/maizzle.png" width="70" height="51" alt="Maizzle"></amp-img>
           </a>
         </header>
-        <section class="p-8 mb-12 text-base leading-6 rounded bg-white text-gray-800">
+        <section class="p-8 mb-12 text-base leading-6 rounded-lg bg-white text-slate-800">
           <h1 class="m-0 mb-4 text-3xl font-semibold text-black">
             Accordion
           </h1>
-          <p class="m-0 mb-6 text-gray-700">
-            UI element made up of vertically stacked items. Each item can be expanded or collapsed to reveal or hide its content.
+          <p class="m-0 mb-6 text-slate-700">
+            UI element made up of vertically stacked items.
+            Each item can be expanded or collapsed to reveal or hide its content.
           </p>
           <amp-accordion>
             <section class="accordion-item">
@@ -254,7 +264,8 @@
                 </h2>
               </header>
               <div class="py-4 md-px-10">
-                Sure, just use the <span class="inline-code">expand-single-section</span> attribute on the <span class="inline-code">&lt;amp-accordion&gt;</span> element.
+                Sure, just use the <span class="inline-code">expand-single-section</span>
+                attribute on the <span class="inline-code">&lt;amp-accordion&gt;</span> element.
               </div>
             </section>
             <section class="accordion-item">
@@ -266,12 +277,14 @@
                 </h2>
               </header>
               <div class="py-4 md-px-10">
-                Add the <span class="inline-code">expanded</span> attribute on the <span class="inline-code">&lt;section&gt;</span> element you want to show as expanded.
+                Add the <span class="inline-code">expanded</span> attribute
+                on the <span class="inline-code">&lt;section&gt;</span> element
+                you want to show as expanded.
               </div>
             </section>
           </amp-accordion>
         </section>
-        <footer class="px-6 text-xs text-center text-gray-600 leading-none">
+        <footer class="px-6 text-xs text-center text-slate-600 leading-none">
           <p class="m-0 mb-1 uppercase">
             Powered by Maizzle
           </p>
@@ -279,9 +292,9 @@
             Quickly build HTML emails with utility-first CSS
           </p>
           <p class="cursor-default">
-            <a href="https://maizzle.com/docs/" class="text-blue-500 no-underline hover-underline">Docs</a> &bull;
-            <a href="https://github.com/maizzle" class="text-blue-500 no-underline hover-underline">Github</a> &bull;
-            <a href="https://twitter.com/maizzlejs" class="text-blue-500 no-underline hover-underline">Twitter</a>
+            <a href="https://maizzle.com/docs/" class="text-blue-500 hover-text-decoration-underline">Docs</a> &bull;
+            <a href="https://github.com/maizzle" class="text-blue-500 hover-text-decoration-underline">Github</a> &bull;
+            <a href="https://twitter.com/maizzlejs" class="text-blue-500 hover-text-decoration-underline">Twitter</a>
           </p>
         </footer>
       </div>
