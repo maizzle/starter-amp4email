@@ -23,24 +23,13 @@ The following templates are included:
 
 ## Getting Started
 
-Install the Maizzle CLI:
-
-```
-npm install -g @maizzle/cli
-```
-
-Scaffold a new project with this starter:
-
-```
-maizzle new amp4email
-```
-
-Alternatively, you may clone this starter directly:
+Run this command:
 
 ```bash
-# remember to install dependencies with `npm install`
-npx degit maizzle/starter-netlify-identity
+npx create-maizzle
 ```
+
+When prompted to select a Starter, choose Custom → AMP4Email.
 
 ## Development
 
