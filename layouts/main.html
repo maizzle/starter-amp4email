@@ -6,6 +6,17 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <style amp4email-boilerplate>body{visibility:hidden;}</style>
     <style amp-custom>
+      @tailwind components;
+      @tailwind utilities;
+
+      img {
+        @apply max-w-full align-middle;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
       .amp-carousel-button {
         background-color: rgba(76, 81, 191, 0.75);
         cursor: pointer;
@@ -14,12 +25,10 @@
       .bg-image {
         background-image:  url('{{ page.images.carousel }}');
       }
-
-      {{{ page.css }}}
     </style>
     <stack name="head" />
   </head>
   <body class="m-0 p-0 w-full [word-break:break-word] [-webkit-font-smoothing:antialiased] {{ page.bodyClass || 'bg-slate-200' }}">
-    <content />
+    <yield />
   </body>
 </html>

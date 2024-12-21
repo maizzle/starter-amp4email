@@ -1,5 +1,5 @@
 <!doctype html>
-<html ⚡4email="">
+<html ⚡4email>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,19 +10,143 @@
     }
   </style>
   <style amp-custom="">
-    .amp-carousel-button {
-      background-color: rgba(76, 81, 191, 0.75);
-      cursor: pointer;
+    .collapse {
+      visibility: collapse !important;
+    }
+    .m-0 {
+      margin: 0 !important;
+    }
+    .mx-auto {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+    .mb-1 {
+      margin-bottom: 4px !important;
+    }
+    .mb-12 {
+      margin-bottom: 48px !important;
+    }
+    .mb-4 {
+      margin-bottom: 16px !important;
+    }
+    .mb-6 {
+      margin-bottom: 24px !important;
+    }
+    .w-full {
+      width: 100% !important;
+    }
+    .max-w-600px {
+      max-width: 600px !important;
+    }
+    .shrink-0 {
+      flex-shrink: 0 !important;
+    }
+    .cursor-default {
+      cursor: default !important;
+    }
+    .rounded-lg {
+      border-radius: 8px !important;
+    }
+    .bg-slate-200 {
+      background-color: #e2e8f0 !important;
+    }
+    .bg-white {
+      background-color: #fffffe !important;
+    }
+    .p-0 {
+      padding: 0 !important;
+    }
+    .p-8 {
+      padding: 32px !important;
+    }
+    .px-6 {
+      padding-left: 24px !important;
+      padding-right: 24px !important;
+    }
+    .py-4 {
+      padding-top: 16px !important;
+      padding-bottom: 16px !important;
+    }
+    .py-8 {
+      padding-top: 32px !important;
+      padding-bottom: 32px !important;
+    }
+    .text-center {
+      text-align: center !important;
+    }
+    .font-sans {
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif !important;
+    }
+    .text-3xl {
+      font-size: 30px !important;
+    }
+    .text-base {
+      font-size: 16px !important;
+    }
+    .text-xs {
+      font-size: 12px !important;
+    }
+    .font-semibold {
+      font-weight: 600 !important;
+    }
+    .uppercase {
+      text-transform: uppercase !important;
+    }
+    .italic {
+      font-style: italic !important;
+    }
+    .leading-6 {
+      line-height: 24px !important;
+    }
+    .leading-none {
+      line-height: 1 !important;
+    }
+    .text-black {
+      color: #000001 !important;
+    }
+    .text-blue-500 {
+      color: #3b82f6 !important;
+    }
+    .text-slate-600 {
+      color: #475569 !important;
+    }
+    .text-slate-700 {
+      color: #334155 !important;
+    }
+    .text-slate-800 {
+      color: #1e293b !important;
+    }
+    .-webkit-font-smoothing-antialiased {
+      -webkit-font-smoothing: antialiased !important;
+    }
+    .word-break-break-word {
+      word-break: break-word !important;
     }
     img {
       max-width: 100%;
       vertical-align: middle;
-      line-height: 100%;
-      border: 0;
     }
     a {
       text-decoration: none;
     }
+    .amp-carousel-button {
+      background-color: rgba(76, 81, 191, 0.75);
+      cursor: pointer;
+    }
+    .hover-text-decoration-underline:hover {
+      text-decoration: underline !important;
+    }
+    @media (min-width: 600px) {
+      .md-p-12 {
+        padding: 48px !important;
+      }
+      .md-px-10 {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+      }
+    }
+  </style>
+  <style>
     .accordion-item {
       margin-bottom: 8px;
       border-width: 0px;
@@ -31,44 +155,70 @@
       border-color: #e5e7eb;
       padding-top: 16px;
       padding-bottom: 16px;
-    }
-    .accordion-item:last-child {
-      border-style: none;
-    }
-    .accordion-item .collapse {
-      display: none;
-    }
-    .accordion-item[expanded] .expand {
-      display: none;
-    }
-    .accordion-item[expanded] .collapse {
-      display: inline-block;
+      &:last-child {
+        border-style: none
+      }
+      .collapse {
+        display: none
+      }
+      &[expanded] .expand {
+        display: none
+      }
+      &[expanded] .collapse {
+        display: inline-block
+      }
     }
     .accordion-toggle {
       border-style: none;
-      background-color: #fff;
-    }
-    .accordion-toggle h2 {
-      display: flex;
-      align-items: center;
-      font-size: 18px;
-      font-weight: 600;
-      color: #000;
-    }
-    .accordion-toggle h2 .icon {
-      margin-right: 16px;
-      height: 24px;
-      width: 24px;
-      border-radius: 9999px;
-      background-color: #000;
-      text-align: center;
-      font-size: 24px;
-      line-height: 18px;
-      color: #fff;
+      background-color: #fffffe;
+      h2 {
+        display: flex
+      }
+      h2 {
+        align-items: center
+      }
+      h2 {
+        font-size: 18px
+      }
+      h2 {
+        font-weight: 600
+      }
+      h2 {
+        color: #000001
+      }
+      h2 {
+        .icon {
+          margin-right: 16px
+        }
+        .icon {
+          height: 24px
+        }
+        .icon {
+          width: 24px
+        }
+        .icon {
+          border-radius: 9999px
+        }
+        .icon {
+          background-color: #000001
+        }
+        .icon {
+          text-align: center
+        }
+        .icon {
+          font-size: 24px
+        }
+        .icon {
+          line-height: 18px
+        }
+        .icon {
+          color: #fffffe
+        }
+      }
     }
     .accordion-toggle:focus {
       outline: 2px solid transparent;
-      outline-offset: 2px;
+      outline-offset: 2px
     }
     .inline-code {
       border-radius: 4px;
@@ -82,131 +232,7 @@
       padding-bottom: 2px;
       font-family: ui-monospace, Menlo, Consolas, monospace;
       font-size: 12px;
-      color: #dc2626;
-    }
-    .collapse {
-      visibility: collapse;
-    }
-    .m-0 {
-      margin: 0;
-    }
-    .mx-auto {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .mb-1 {
-      margin-bottom: 4px;
-    }
-    .mb-12 {
-      margin-bottom: 48px;
-    }
-    .mb-4 {
-      margin-bottom: 16px;
-    }
-    .mb-6 {
-      margin-bottom: 24px;
-    }
-    .w-full {
-      width: 100%;
-    }
-    .max-w-600px {
-      max-width: 600px;
-    }
-    .shrink-0 {
-      flex-shrink: 0;
-    }
-    .cursor-default {
-      cursor: default;
-    }
-    .rounded-lg {
-      border-radius: 8px;
-    }
-    .bg-slate-200 {
-      background-color: #e2e8f0;
-    }
-    .bg-white {
-      background-color: #fff;
-    }
-    .p-0 {
-      padding: 0;
-    }
-    .p-8 {
-      padding: 32px;
-    }
-    .px-6 {
-      padding-left: 24px;
-      padding-right: 24px;
-    }
-    .py-4 {
-      padding-top: 16px;
-      padding-bottom: 16px;
-    }
-    .py-8 {
-      padding-top: 32px;
-      padding-bottom: 32px;
-    }
-    .text-center {
-      text-align: center;
-    }
-    .font-sans {
-      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-    }
-    .text-3xl {
-      font-size: 30px;
-    }
-    .text-base {
-      font-size: 16px;
-    }
-    .text-xs {
-      font-size: 12px;
-    }
-    .font-semibold {
-      font-weight: 600;
-    }
-    .uppercase {
-      text-transform: uppercase;
-    }
-    .italic {
-      font-style: italic;
-    }
-    .leading-6 {
-      line-height: 24px;
-    }
-    .leading-none {
-      line-height: 1;
-    }
-    .text-black {
-      color: #000;
-    }
-    .text-blue-500 {
-      color: #3b82f6;
-    }
-    .text-slate-600 {
-      color: #475569;
-    }
-    .text-slate-700 {
-      color: #334155;
-    }
-    .text-slate-800 {
-      color: #1e293b;
-    }
-    .-webkit-font-smoothing-antialiased {
-      -webkit-font-smoothing: antialiased;
-    }
-    .word-break-break-word {
-      word-break: break-word;
-    }
-    .hover-text-decoration-underline:hover {
-      text-decoration: underline;
-    }
-    @media (min-width: 600px) {
-      .md-p-12 {
-        padding: 48px;
-      }
-      .md-px-10 {
-        padding-left: 40px;
-        padding-right: 40px;
-      }
+      color: #dc2626
     }
   </style>
   <script async="" custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
@@ -232,8 +258,8 @@
             <section class="accordion-item">
               <header class="accordion-toggle">
                 <h2>
-                  <span class="icon expand shrink-0">+</span>
-                  <span class="icon collapse shrink-0">&ndash;</span>
+                  <span class="shrink-0">+</span>
+                  <span class="collapse shrink-0">&ndash;</span>
                   <span>When should you use an accordion?</span>
                 </h2>
               </header>
@@ -246,8 +272,8 @@
             <section class="accordion-item">
               <header class="accordion-toggle">
                 <h2>
-                  <span class="icon expand shrink-0">+</span>
-                  <span class="icon collapse shrink-0">&ndash;</span>
+                  <span class="shrink-0">+</span>
+                  <span class="collapse shrink-0">&ndash;</span>
                   <span>Why should you use it?</span>
                 </h2>
               </header>
@@ -258,8 +284,8 @@
             <section class="accordion-item">
               <header class="accordion-toggle">
                 <h2>
-                  <span class="icon expand shrink-0">+</span>
-                  <span class="icon collapse shrink-0">&ndash;</span>
+                  <span class="shrink-0">+</span>
+                  <span class="collapse shrink-0">&ndash;</span>
                   <span>Can I have just one item open at a time?</span>
                 </h2>
               </header>
@@ -271,8 +297,8 @@
             <section class="accordion-item">
               <header class="accordion-toggle">
                 <h2>
-                  <span class="icon expand shrink-0">+</span>
-                  <span class="icon collapse shrink-0">&ndash;</span>
+                  <span class="shrink-0">+</span>
+                  <span class="collapse shrink-0">&ndash;</span>
                   <span>What if I want one of the items already expanded?</span>
                 </h2>
               </header>
